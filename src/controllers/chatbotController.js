@@ -4,6 +4,7 @@ import {
 import {
     config
 } from '../config/config.js'
+import request from 'request';
 
 const getHomePage = asyncHandler(async (req, res, next) => {
     res.send('Hello');
