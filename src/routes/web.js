@@ -3,7 +3,7 @@ import * as chatbotController from '../controllers/chatbotController.js'
 const router = express.Router();
 
 router.get('/', chatbotController.getHomePage)
-router.get('/webhook', chatbotController.getWebhook)
-router.post('/webhook', chatbotController.postWebhook)
+router.get('/me-webhook', chatbotController.getWebhook)
+router.post('/me-webhook', chatbotController.postWebhook)
 
 export default router;
